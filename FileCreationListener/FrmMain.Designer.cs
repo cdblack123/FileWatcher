@@ -170,10 +170,12 @@ namespace FileCreationListener
             // 
             // txtExcludeKeyWords
             // 
+            this.txtExcludeKeyWords.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtExcludeKeyWords.Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtExcludeKeyWords.Location = new System.Drawing.Point(260, 155);
             this.txtExcludeKeyWords.Name = "txtExcludeKeyWords";
-            this.txtExcludeKeyWords.Size = new System.Drawing.Size(369, 27);
+            this.txtExcludeKeyWords.Size = new System.Drawing.Size(565, 27);
             this.txtExcludeKeyWords.TabIndex = 12;
             this.toolTip1.SetToolTip(this.txtExcludeKeyWords, "Multiple keywords can be added for exlusion.  Use a comma to separate multiple ke" +
         "y words.\r\n");
