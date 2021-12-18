@@ -97,7 +97,7 @@ namespace FileCreationListener
             this.lblMessage.Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMessage.Location = new System.Drawing.Point(16, 197);
             this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(1017, 38);
+            this.lblMessage.Size = new System.Drawing.Size(1021, 38);
             this.lblMessage.TabIndex = 4;
             this.lblMessage.Text = "Listening...";
             this.lblMessage.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
