@@ -273,6 +273,12 @@ namespace FileCreationListener
 
         private void btnStart_Click(object sender, EventArgs e)
         {
+
+            Properties.Settings.Default.searchPattern = txtFilter.Text;
+            Properties.Settings.Default.sourceDir = lblSource.Text;
+            Properties.Settings.Default.destinationDir = lblDestination.Text;
+            Properties.Settings.Default.exclusionKeyWords = txtExcludeKeyWords.Text;
+            Properties.Settings.Default.deleteSourceFile = chkDeleteSource.Checked;
             Properties.Settings.Default.Save();
             Properties.Settings.Default.Reload();
             pathSource = lblSource.Text;
@@ -312,12 +318,18 @@ namespace FileCreationListener
             pathDest = Properties.Settings.Default.destinationDir;
 
             txtFilter.Text = Properties.Settings.Default.searchPattern;
+            txtExcludeKeyWords.Text = Properties.Settings.Default.exclusionKeyWords;
+
+            chkDeleteSource.Checked = Properties.Settings.Default.deleteSourceFile;
 
             lblDestination.Text = pathDest;
             lblSource.Text = pathSource;
 
-            txtExcludeKeyWords.Text = "coating";
             validatePaths();
+            btnStart_Click(sender, e);
+
+           // txtExcludeKeyWords.Text = "coating";
+            
         }
 
         private void lblSource_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

@@ -58,5 +58,29 @@ namespace FileCreationListener.Properties {
                 this["searchPattern"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("coating")]
+        public string exclusionKeyWords {
+            get {
+                return ((string)(this["exclusionKeyWords"]));
+            }
+            set {
+                this["exclusionKeyWords"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool deleteSourceFile {
+            get {
+                return ((bool)(this["deleteSourceFile"]));
+            }
+            set {
+                this["deleteSourceFile"] = value;
+            }
+        }
     }
 }
