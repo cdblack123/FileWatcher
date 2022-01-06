@@ -310,6 +310,8 @@ namespace FileCreationListener
 
         private void frmMain_Load(object sender, EventArgs e)
         {
+
+            this.Text = "Directory Listener (version: " + System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString() + ")";
             //pathSource = "C:\\Users\\ChristopherBlack\\AutoCAD\\test_drawings";
             //pathDest = "C:\\Users\\ChristopherBlack\\AutoCAD\\test_copy\\";
             //pathSource = "C:\\Users";
